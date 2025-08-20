@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food loversProducts — SuperMart</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="products">
+  
+<nav class="navbar">
+  <div class="wrap container">
+    <a class="brand" href="index.html">SuperMart<span class="badge">Fresh Daily</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-pill" id="cartLink" href="cart.html">
+        🛒 <span>Cart</span>
+        <strong id="cartCount">0</strong>
+      </a>
+    </div>
+  </div>
+</nav>
+
+  <main class="container section">
+    <h1>All Products</h1>
+    <p class="muted">Browse essentials across our aisles.</p>
+    <div class="grid">
+      
+      <article class="card">
+        <div class="img-wrap"><img src="assets/images/apples.jpg" alt="Fresh Apples 1kg" style="width:100%;height:100%;object-fit:cover"></div>
+        <h3>Fresh Apples 1kg</h3>
+        <p>Crisp Granny Smith apples, locally sourced.</p>
+        <div class="price">R 29.99</div>
+        <button class="btn" data-add data-id="apples" data-name="Fresh Apples 1kg" data-price="29.99" data-img="assets/images/apples.jpg">Add to Cart</button>
+      </article>
+    
+      <article class="card">
+        <div class="img-wrap"><img src="assets/images/bread.jpeg" alt="Whole Wheat Bread" style="width:100%;height:100%;object-fit:cover"></div>
+        <h3>Whole Wheat Bread</h3>
+        <p>Soft, fiber-rich loaf baked this morning.</p>
+        <div class="price">R 22.49</div>
+        <button class="btn" data-add data-id="bread" data-name="Whole Wheat Bread" data-price="22.49" data-img="assets/images/bread.jpeg">Add to Cart</button>
+      </article>
+    
+      <article class="card">
+        <div class="img-wrap"><img src="assets/images/milk.jpeg" alt="Full Cream Milk 2L" style="width:100%;height:100%;object-fit:cover"></div>
+        <h3>Full Cream Milk 2L</h3>
+        <p>Farm fresh goodness for the whole family.</p>
+        <div class="price">R 31.99</div>
+        <button class="btn" data-add data-id="milk" data-name="Full Cream Milk 2L" data-price="31.99" data-img="assets/images/milk.jpeg">Add to Cart</button>
+      </article>
+    
+      <article class="card">
+        <div class="img-wrap"><img src="assets/images/eggs.jpg" alt="Free-Range Eggs 18s" style="width:100%;height:100%;object-fit:cover"></div>
+        <h3>Free-Range Eggs 18s</h3>
+        <p>Large eggs from happy hens.</p>
+        <div class="price">R 54.95</div>
+        <button class="btn" data-add data-id="eggs" data-name="Free-Range Eggs 18s" data-price="54.95" data-img="assets/images/eggs.jpg">Add to Cart</button>
+      </article>
+    
+      <article class="card">
+        <div class="img-wrap"><img src="assets/images/Rice.jpg" alt="Basmati Rice 5kg" style="width:100%;height:100%;object-fit:cover"></div>
+        <h3>Basmati Rice 5kg</h3>
+        <p>Fragrant long-grain basmati rice.</p>
+        <div class="price">R 149.00</div>
+        <button class="btn" data-add data-id="rice" data-name="Basmati Rice 5kg" data-price="149.0" data-img="assets/images/Rice.jpg">Add to Cart</button>
+      </article>
+    
+    </div>
+  </main>
+  <footer>
+  <p>© 2025 Food lovers</p>
+</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

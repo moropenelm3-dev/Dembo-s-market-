@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food loversYour Cart — SuperMart</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="cart">
+  
+<nav class="navbar">
+  <div class="wrap container">
+    <a class="brand" href="index.html">SuperMart<span class="badge">Fresh Daily</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="cart-pill" id="cartLink" href="cart.html">
+        🛒 <span>Cart</span>
+        <strong id="cartCount">0</strong>
+      </a>
+    </div>
+  </div>
+</nav>
+
+  <main class="container section">
+    <h1>Your Cart</h1>
+    <div id="emptyCart" style="display:none;background:#fff;border:1px solid var(--border);padding:16px;border-radius:12px">
+      Your cart is empty. Add products from the <a href="products.html">Products</a> page.
+    </div>
+    <table id="cartTable" class="table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Line Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3" style="text-align:right">Grand Total</td>
+          <td id="grandTotal">R 0.00</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+    <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn ghost" href="products.html">Continue Shopping</a>
+      <button class="btn alt" onclick="alert('Payment processed (demo). Order #'+Math.floor(100000+Math.random()*899999))">Checkout</button>
+    </div>
+  </main>
+  <footer>
+  <p>© 2025 Food lovers</p>
+</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
